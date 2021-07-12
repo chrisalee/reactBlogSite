@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "blogCategory": "Featured",
+            "blogTitle": "Fitness Mantra To Live Fit",
+            "postedOn": "July 1, 2021",
+            "author": "Chris Lee",
+            "blogImage": "/images/1.png",
+            "blogText": "Do it to it.  Get it done.  Just do it."
+        },
+        {
+            "id": 2,
+            "blogCategory": "Healthy Lifestyle",
+            "blogTitle": "Eating Mantra To Live Fit",
+            "postedOn": "June 1, 2021",
+            "author": "Lee Chris",
+            "blogImage": "/images/2.png",
+            "blogText": "Stuff you mouth less.  Eat more vegetables."
+        },
+        {
+            "id": 3,
+            "blogCategory": "Featured",
+            "blogTitle": "Brain Mantra To Live Well",
+            "postedOn": "July 11, 2020",
+            "author": "Chris Lee",
+            "blogImage": "images/3.png",
+            "blogText": "Learn a lot.  As much as you can.  and figure out how to apply these to make your money."
+        },
+        {
+            "id": 4,
+            "blogCategory": "Featured",
+            "blogTitle": "coding Mantra To Live smart",
+            "postedOn": "July 10, 2021",
+            "author": "Chris Lee",
+            "blogImage": "images/4.png",
+            "blogText": "Practice every single day.  things will become easier."
+        },
+        {
+            "id": 5,
+            "blogCategory": "Featured",
+            "blogTitle": "Fitness Mantra To Live Fit",
+            "postedOn": "June 1, 2021",
+            "author": "Chris Lee",
+            "blogImage": "images/5.png",
+            "blogText": "Do it to it.  Get it done.  Just do it."
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+    background-color: #ffffff;
+    padding-bottom: 2em;
+}
+
+.footer__title {
+    text-align: center;
+    padding: 2em;
+    font-family: var(--ff-primary);
+    color: var(--clr-accent2);
+}
+
+.footer__social {
+    margin-bottom: 2em;
+}

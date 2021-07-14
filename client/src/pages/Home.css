@@ -1,6 +1,15 @@
+.home__container {
+    margin-top: -1.55em;
+}
+
+.home__gallary {
+    box-shadow: var(--bs);
+}
+
 .gallaryPost{
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 .sideImageWrapper div{
     width: 100%;
@@ -16,7 +25,6 @@
 
 .mainImageWrapper{
     width: 100%;
-    height: 450px;
 }
 
 .mainImageWrapper img{

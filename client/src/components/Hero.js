@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
 const Hero = (props) => {
     return (
-        <div>
+        <div className='hero'>
             <Card>
                 <div style={{ padding: '2.500em 0'}}>
                     <Logo />

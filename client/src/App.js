@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Post from "./pages/Post";
+import AllPosts from "./pages/AllPosts";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/contact-us' component={Contact} />
           <Route path='/about-us'   component={AboutUs} />
           <Route path='/post/:slug' component={Post} />
+          <Route path='/posts'      component={AllPosts} />
         </Switch>
 
       </div>

@@ -3,50 +3,74 @@ import "./Home.css";
 import Card from "../components/UI/Card";
 import Layout from "../components/Layout";
 import RecentPosts from "../components/RecentPosts";
-import '../data/blogPost.json';
+import blogData from '../data/blogPost.json';
 
-// const SideImage = props => {
-//     return (
-//         <div style={{ height: `${props.height}px`  }}>
-//             <img src={props.src} alt="" />
-//         </div>
-//     );
-// };
+const SideImage = (props) => {
+    return (
+        <div style={{ height: `${props.height}px`  }}>
+            <img src={props.src} alt="" />
+        </div>
+    );
+};
 
-// const ImageGallary = props => (
-//         <div className="gallaryPost" style={props.gallaryStyle}>
-//                 <section style={{ width: props.largeWidth }}>
-//                     <div className="mainImageWrapper">
-//                         <img src={require('../images/' + props.imagesArray[1])} alt="" />
-//                     </div>
-//                 </section>
-//                 <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
-//                     {
-//                         props.imagesArray.map(image => 
-//                             <SideImage 
-//                                 height={props.sideImageHeight}
-//                                 src={require('../images/' + image)}
-//                                 alt="" />
-//                         )
-//                     }
-//                 </section>
-//         </div>
-// );
+const ImageGallary = (props) => (
+        <div className="gallaryPost" style={props.gallaryStyle}>
+                <section style={{ width: props.largeWidth }}>
+                    <div className="mainImageWrapper">
+                        <img src={props.imagesArray[1]} alt="" />
+                    </div>
+                </section>
+                <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
+                    {/* {
+                        props.imagesArray.map(image => 
+                            <SideImage 
+                              height = {props.sideImageHeight}
+                              src = {props.image}
+                              alt = "" />
+                        )
+                    } */}
+                    <SideImage
+                      height= {props.sideImageHeight}
+                      src={props.imagesArray[2]}
+                    />
+                    <SideImage
+                      height= {props.sideImageHeight}
+                      src={props.imagesArray[3]}
+                    />
+                    <SideImage
+                      height= {props.sideImageHeight}
+                      src={props.imagesArray[4]}
+                    />
+                </section>
+        </div>
+);
 
 const Home = (props) => {
+
+  const gallaryHeight = 450;
+  const gallaryStyle = {
+    height: gallaryHeight + 'px',
+    overflow: 'hidden'
+  };
+  const sideImageHeight = gallaryHeight / 3;
+  const imgAr = blogData.data.map(post => post.blogImage);
+
   return (
-    <div>
-      {/* <Card>
+    <div className='home__container'>
+      <div className="home__gallary">
+      <Card>
         <ImageGallary
-          largeWidth="70%"
-          smallWidth="30%"
-          sideImageHeight={sideImageHeight}
-          gallaryStyle={gallaryStyle}
-          imagesArray={imgAr}
+          largeWidth = "70%"
+          smallWidth = "30%"
+          sideImageHeight = {sideImageHeight}
+          gallaryStyle = {gallaryStyle}
+          imagesArray = {imgAr}
         />
-      </Card> */}
+      </Card>
+      </div>
+      
       <Layout>
-        <RecentPosts style={{ width: "70%" }} />
+          <RecentPosts style={{ width: "70%" }} />
       </Layout>
     </div>
   );

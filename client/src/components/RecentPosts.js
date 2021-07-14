@@ -4,13 +4,13 @@ import Card from './UI/Card';
 
 const RecentPosts = (props) => {
     return (
-        <div style={props.style}>
-        <Card style={{marginBottom: '20px'}}>
+        <div style={props.style} className='post__cont'>
+        <Card>
             <div className="postImageWrapper">
                 <img src={"https://2.bp.blogspot.com/-ZOY5OAvnKj0/V9_M3_TVTLI/AAAAAAAAD40/UQl4rIoqgi42zaeq0yR_y1gnnchZFxupQCLcB/s1600/3-3.jpg"} alt=""/>
             </div>
 
-            <div style={{textAlign: 'center'}}>
+            <div className='post__text'>
 
                 <span>Featured</span>
                 <h2>Fitness Mantra To Live Fit Life</h2>
@@ -20,10 +20,6 @@ const RecentPosts = (props) => {
                 <button>Read More</button>     
 
             </div>
-
-            
-
-
         </Card>
     </div>
     )

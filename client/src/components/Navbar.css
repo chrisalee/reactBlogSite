@@ -39,6 +39,7 @@
 .search__input.active {
     width: 25.500em;
     padding: .35em;
+    box-shadow: var(--bs);
 }
 
 .search__input:focus {

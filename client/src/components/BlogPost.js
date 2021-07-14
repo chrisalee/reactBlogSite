@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react';
 import "./BlogPost.css";
 import Card from "./UI/Card";
 import blogPost from "../data/blogPost.json";
-import imgOne from '../images/1.png';
 
 const BlogPost = (props) => {
 
     const [post, setPost] = useState({
-        id: "",
-        blogCategory: "",
-        blogTitle: "",
-        postedOn: "",
-        author: "",
-        blogImage: "",
-        blogText: ""
+        id: '',
+        blogCategory: '',
+        blogTitle: '',
+        slug: '',
+        postedOn: '',
+        author: '',
+        blogImage: '',
+        blogText: ''
     });
-    const [slug, setSlug] = useState("");
+    const [slug, setSlug] = useState('');
 
     useEffect(() => {
         const slug = props.match.params.slug;
@@ -24,10 +24,10 @@ const BlogPost = (props) => {
         setSlug(slug);
     }, [post, props.match.params.slug]);
 
-    // if(post.blogImage === "") return null;
+    if(post.blogImage === '') return null; 
 
     return (
-        <div key={post.slug} className="blogPost__container">
+        <div key={post.id} className="blogPost__container">
             <Card>
                 <div className="blogPost__header">
                     <span className="blogPost__category">{post.blogCategory}</span>
@@ -36,7 +36,7 @@ const BlogPost = (props) => {
                 </div>
 
                 <div className="blogPost__imageContainer">
-                    <img src={imgOne} alt='blogImage' />
+                    <img src={post.blogImage} alt='blogImage' />
                 </div>
 
                 <div className="blogPost__content">

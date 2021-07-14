@@ -4,6 +4,7 @@
             "id": 1,
             "blogCategory": "Featured",
             "blogTitle": "Fitness Mantra To Live Fit",
+            "slug": "fitness-mantra-to-live-fit",
             "postedOn": "July 1, 2021",
             "author": "Chris Lee",
             "blogImage": "/images/1.png",
@@ -13,6 +14,7 @@
             "id": 2,
             "blogCategory": "Healthy Lifestyle",
             "blogTitle": "Eating Mantra To Live Fit",
+            "slug": "eating-mantra-to-live-fit",
             "postedOn": "June 1, 2021",
             "author": "Lee Chris",
             "blogImage": "/images/2.png",
@@ -20,29 +22,32 @@
         },
         {
             "id": 3,
-            "blogCategory": "Featured",
+            "blogCategory": "Learning",
             "blogTitle": "Brain Mantra To Live Well",
+            "slug": "learning-mantra-to-live-fit",
             "postedOn": "July 11, 2020",
             "author": "Chris Lee",
-            "blogImage": "images/3.png",
+            "blogImage": "/images/3.png",
             "blogText": "Learn a lot.  As much as you can.  and figure out how to apply these to make your money."
         },
         {
             "id": 4,
             "blogCategory": "Featured",
             "blogTitle": "coding Mantra To Live smart",
+            "slug": "coding-mantra-to-live-fit",
             "postedOn": "July 10, 2021",
             "author": "Chris Lee",
-            "blogImage": "images/4.png",
+            "blogImage": "/images/4.png",
             "blogText": "Practice every single day.  things will become easier."
         },
         {
             "id": 5,
             "blogCategory": "Featured",
-            "blogTitle": "Fitness Mantra To Live Fit",
+            "blogTitle": "Mantra To Live By",
+            "slug": "mantra-to-live-by",
             "postedOn": "June 1, 2021",
             "author": "Chris Lee",
-            "blogImage": "images/5.png",
+            "blogImage": "/images/5.png",
             "blogText": "Do it to it.  Get it done.  Just do it."
         }
     ]

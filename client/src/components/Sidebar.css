@@ -1,11 +1,18 @@
-.sidebar {
+/* .sidebar {
     width: 27.5%;
     margin-right: .5em;
     background-color: var(--clr-light);
-}
+} */
 
 .sidebar__container {
     width: 27%;
+}
+
+.card__spacing {
+    margin: 0 0 1.55em;
+    padding: 0 0 1em;
+    background-color: var(--clr-light);
+    box-shadow: var(--bs);
 }
 
 .card__header {

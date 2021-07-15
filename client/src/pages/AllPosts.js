@@ -11,13 +11,13 @@ const AllPosts = (props) => {
     }, [])
 
   return (
-    <div>
+    <>
       <Layout>
-        <div className="allPosts__container">
+        <div >
           <BlogPost {...props} />
         </div>
       </Layout>
-    </div>
+    </>
   );
 };
 

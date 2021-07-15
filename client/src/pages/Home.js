@@ -4,6 +4,7 @@ import Card from "../components/UI/Card";
 import Layout from "../components/Layout";
 import RecentPosts from "../components/RecentPosts";
 import blogData from '../data/blogPost.json';
+// import BlogPost from "../components/BlogPost";
 
 const SideImage = (props) => {
     return (
@@ -71,6 +72,20 @@ const Home = (props) => {
       
       <Layout>
           <RecentPosts style={{ width: "70%" }} />
+
+            {/* {blogData.data.map((post) => (
+                <BlogPost 
+                  key = {post.slug}
+                  id = {post.id}
+                  blogCategory = {post.blogCategory}
+                  blogTitle = {post.blogTitle}
+                  blogImage = {post.blogImage}
+                  author = {post.author}
+                  postedOn = {post.postedOn}
+                  slug = {post.slug}
+                />             
+            ))} */}
+
       </Layout>
     </div>
   );

@@ -1,6 +1,8 @@
 import React from 'react';
+// import BlogPost from './BlogPost';
 import './RecentPosts.css';
 import Card from './UI/Card';
+// import blogData from '../data/blogPost.json';
 
 const RecentPosts = (props) => {
     return (
@@ -21,6 +23,19 @@ const RecentPosts = (props) => {
 
             </div>
         </Card>
+
+        {/* {blogData.data.map((post) => (
+                <BlogPost 
+                  key = {post.slug}
+                  id = {post.id}
+                  blogCategory = {post.blogCategory}
+                  blogTitle = {post.blogTitle}
+                  blogImage = {post.blogImage}
+                  author = {post.author}
+                  postedOn = {post.postedOn}
+                  slug = {post.slug}
+                />             
+            ))} */}
     </div>
     )
 }

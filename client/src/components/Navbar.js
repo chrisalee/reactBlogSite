@@ -26,7 +26,8 @@ const Navbar = (props) => {
             <ul className="navbar__menu">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about-us">About Us</Link></li>
-                <li><Link to="/posts">Posts</Link></li>
+                <li><Link to="/">Posts</Link></li>
+                {/* <li><Link to="/posts">Posts</Link></li> */}
                 <li><Link to="/contact-us">Contact Us</Link></li>
             </ul>
             <div className="search">

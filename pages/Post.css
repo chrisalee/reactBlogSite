@@ -1,0 +1,13 @@
+.post__container {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 1em auto;
+    font-family: var(--ff-secondary);
+}
+
+.blogPost {
+    width: 70%;
+    background-color: var(--clr-light);
+    margin-left: .5em;
+}
+

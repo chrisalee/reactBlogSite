@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Otomanopee+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: var(--ff-secondary);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom properties ******************************************************************************************************/
+:root {
+  --ff-primary: "Cinzel", serif;
+  --ff-secondary: 'Asap', sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 800;
+
+  --clr-light: #ffffff;
+  --clr-dark: #333333;
+  --clr-accent: #5f9ea0;
+  --clr-accent2: #565673;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15),
+    0.1em 0.1em 0.2em rgba(0, 0, 0, 0.1),
+    0.01em 0.01em 0.02em rgba(0, 0, 0, 0.01);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* custom scrollbar *************************************************************************/
+/* width */
+::-webkit-scrollbar {
+  width: 1.125em;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: var(--bs);
+  border-radius: .5em;
+}
+/* Track color */
+::-webkit-scrollbar-track-piece {
+  background: var(--clr-light);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-dark);
+  border-radius: 1em;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-accent);
+}

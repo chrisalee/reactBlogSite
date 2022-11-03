@@ -1,0 +1,16 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e9eaed;
+  font-family: var(--ff-secondary);
+}
+
+.app {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 1px solid #333333; */
+}

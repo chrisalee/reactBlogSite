@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625em 0;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.250em;
+    text-transform: capitalize;
+    font-weight: var(--fw-reg);
+    color: var(--clr-accent2);
+    padding: 0 0.625em;
+}
+
+.search form {
+    display: flex;
+    margin: 0 0.625em;
+
+}
+
+.search__input {
+    border: 0;
+    width: 0;
+    transition: width 0.5s ease-in;
+    background: #e9eaed;
+}
+
+.search__input.active {
+    width: 25.500em;
+    padding: .35em;
+    box-shadow: var(--bs);
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.search__icon {
+    cursor: pointer;
+}

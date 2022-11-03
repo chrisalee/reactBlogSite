@@ -1,0 +1,30 @@
+.layout__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.layout__footer {
+    box-shadow: var(--bs);
+}
+
+.footer__title {
+    text-align: center;
+    padding: 2em;
+    background-color: var(--clr-light);
+}
+
+.footer__title a {
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    color: var(--clr-accent2);
+    cursor: pointer;
+    font-size: var(--fs-h2);
+}
+
+.footer__social {
+    margin-bottom: 2em;
+    background-color: var(--clr-light);
+    padding-bottom: 2em;
+
+}

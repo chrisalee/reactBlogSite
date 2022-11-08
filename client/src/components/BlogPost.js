@@ -38,7 +38,7 @@ const BlogPost = (props) => {
           </div>
 
           <div className="blogPost__imageContainer">
-            <img src={process.env.PUBLIC_URL + post.blogImage} alt="blogImage" />
+            <img src={window.location.origin + post.blogImage} alt="blogImage" />
           </div>
 
           <div className="blogPost__content">

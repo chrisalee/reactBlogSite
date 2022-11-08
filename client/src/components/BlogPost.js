@@ -15,14 +15,14 @@ const BlogPost = (props) => {
     blogText: "",
   });
   const [slug, setSlug] = useState("");
-
+  
   useEffect(() => {
     const slug = props.match.params.slug;
     const post = blogPost.data.find((post) => post.slug === slug);
     setPost(post);
     setSlug(slug);
   }, [post, props.match.params.slug]);
-
+  
   if (post.blogImage === "") return null;
 
   return (
@@ -38,7 +38,7 @@ const BlogPost = (props) => {
           </div>
 
           <div className="blogPost__imageContainer">
-            <img src={window.location.origin + post.blogImage} alt="blogImage" />
+            <img src={process.env.PUBLIC_URL + `${post.blogImage}`} alt="blogImage" />
           </div>
 
           <div className="blogPost__content">

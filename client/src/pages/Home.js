@@ -18,7 +18,7 @@ const ImageGallary = (props) => (
         <div className="gallaryPost" style={props.gallaryStyle}>
                 <section style={{ width: props.largeWidth }}>
                     <div className="mainImageWrapper">
-                        <img src={props.imagesArray[1]} alt="" />
+                        <img src={`https://chrisalee.github.io/reactBlogSite${props.imagesArray[1]}`} alt="" />
                     </div>
                 </section>
                 <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
@@ -32,15 +32,15 @@ const ImageGallary = (props) => (
                     } */}
                     <SideImage
                       height= {props.sideImageHeight}
-                      src={props.imagesArray[2]}
+                      src={`https://chrisalee.github.io/reactBlogSite${props.imagesArray[2]}`}
                     />
                     <SideImage
                       height= {props.sideImageHeight}
-                      src={props.imagesArray[3]}
+                      src={`https://chrisalee.github.io/reactBlogSite${props.imagesArray[3]}`}
                     />
                     <SideImage
                       height= {props.sideImageHeight}
-                      src={props.imagesArray[4]}
+                      src={`https://chrisalee.github.io/reactBlogSite${props.imagesArray[4]}`}
                     />
                 </section>
         </div>

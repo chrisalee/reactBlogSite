@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Post from "./pages/Post";
 import AllPosts from "./pages/AllPosts";
-import PageNotFound from "./pages/PageNotFound";
+// import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   return (
@@ -19,11 +19,12 @@ const App = () => {
 
         <Switch>
           <Route path='/' exact     component={Home} />
+          <Route path='/reactBlogSite/' component={Home} />
           <Route path='/contact-us' component={Contact} />
           <Route path='/about-us'   component={AboutUs} />
           <Route path='/post/:slug' component={Post} />
           <Route path='/posts'      component={AllPosts} />
-          <Route path="*" component={PageNotFound} />
+          {/* <Route path="*" component={PageNotFound} /> */}
         </Switch>
 
       </div>

@@ -1,0 +1,9 @@
+.pageNotFound {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageNotFound > h1 {
+    font-size: 40px;
+}
